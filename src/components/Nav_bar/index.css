@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+
+.Nav_Bar_Cont{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    position: absolute;
+    right: 0;
+  }
+  
+  .Nav_Bar_Logo{
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  
+  .Nav_Bar_Logo img{
+    width: 48px;
+    height: 48px;
+  }
+  
+  .Nav_Bar_Logo_Line{
+    height: 1px;
+    width: 473px;
+    border-bottom: 1px solid #979797;
+    position: absolute;
+    right: -10%;
+  }
+  
+  .Nav_Bar_Index{
+    display: flex;
+    width: 60%;
+    height: 96px;
+    background-color: #979797;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Nav_Bar_Index_ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .Nav_Bar_Index_ul li {
+    gap: 16px;
+  }
+  
+  .Nav_Bar_Index_ul li a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  .Nav_Bar_Index_El_Number{
+    font-family: Barlow ,sans-serif;
+    font-weight: bold;
+  }
+  
+  .Nav_Bar_Index_El_Name{
+    font-family: Barlow ,sans-serif;
+    font-weight: 400;
+    padding-left: 5px;
+  }
+  

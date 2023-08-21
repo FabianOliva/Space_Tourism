@@ -2,3 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
 
+body{
+    background-color: blue;
+    margin: 0px;
+}
+
+.root{
+    width: 100vw;
+    height: 100vh;
+}
