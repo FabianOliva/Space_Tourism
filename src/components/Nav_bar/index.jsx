@@ -10,16 +10,16 @@ const Nav_Bar = () => {
     <div className="Nav_Bar_Index">
         <ul className="Nav_Bar_Index_ul">
             <li className="Nav_Bar_Index_El_1">
-                <a href="#"><span className="Nav_Bar_Index_El_Number">00</span><span className="Nav_Bar_Index_El_Name">Home</span></a>
+                <a href="#"><span className="Nav_Bar_Index_El_Number">00</span><span className="Nav_Bar_Index_El_Name">HOME</span></a>
                 </li>
             <li className="Nav_Bar_Index_El_2">
-                <a href="#"><span className="Nav_Bar_Index_El_Number">01</span><span className="Nav_Bar_Index_El_Name">Destination</span></a>
+                <a href="#"><span className="Nav_Bar_Index_El_Number">01</span><span className="Nav_Bar_Index_El_Name">DESTINATION</span></a>
                 </li>
             <li className="Nav_Bar_Index_El_3">
-                <a href="#"><span className="Nav_Bar_Index_El_Number">02</span ><span className="Nav_Bar_Index_El_Name">Crew</span></a>
+                <a href="#"><span className="Nav_Bar_Index_El_Number">02</span ><span className="Nav_Bar_Index_El_Name">CREW</span></a>
                 </li>
             <li className="Nav_Bar_Index_El_4"> 
-            <a href="#"><span className="Nav_Bar_Index_El_Number">03</span><span className="Nav_Bar_Index_El_Name">Technology</span></a>
+            <a href="#"><span className="Nav_Bar_Index_El_Number">03</span><span className="Nav_Bar_Index_El_Name">TECHNOLOGY</span></a>
             </li>
         </ul>
     </div>
