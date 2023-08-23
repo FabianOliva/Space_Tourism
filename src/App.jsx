@@ -5,12 +5,12 @@ import './App.css'
 import Nav_Bar from './components/Nav_bar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='App_css'>
       <Nav_Bar/>
-    </>
+      
+    </div>
   )
 }
 
