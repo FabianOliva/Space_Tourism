@@ -1,26 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
 
-html{
-    width: 100vw;
-    height: 100vh; 
+html {
+  width: 100vw;
+  height: 100vh;
 }
 
-body{
-    margin: 0px;
-    width: 100vw;
-    height: 100vh; 
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
 }
 
-#root{
-    width: 100vw;
-    height: 100vh;
+#root {
+  width: 100vw;
+  height: 100vh;
 }
 
-.App_css{
-    background-image: url("../public/home/background-home-desktop.jpg");
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
+.App_css {
+  background-image: url("../public/home/background-home-desktop.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.home_header {
+  width: 100%;
+  height: 20%;
+}
+
+.home_main {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+.home_main_left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_main_left_cont {
+  width: 450px;
+  height: 382px;
+  color: white;
+}
+
+.home_main_left_cont h5 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 4.25px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+}
+
+.home_main_left_title {
+  font-size: 150px;
+  font-family: "Bellefair", serif;
+  padding: 0;
+  margin: 0;
+}
+
+.home_main_left_text {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 32px;
+  color: #d0d6f9;
+  letter-spacing: 1px;
+}
+
+.home_main_right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bellefair", serif;
+}
+
+.home_main_right_button {
+  width: 274px;
+  height: 274px;
+  text-decoration: none;
+  font-size: 32px;
+  margin-top: 20%;
+  margin-left: 0%;
+  color: #0b0d17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 100%;
+  position: relative;
+}
+
+.home_main_right_button::before {
+  content: "";
+  position: absolute;
+  top: -70px; /* Desplaza el borde 100px hacia arriba */
+  left: -70px; /* Desplaza el borde 100px hacia la izquierda */
+  width: calc(
+    100% + 140px
+  ); /* Agrega 200px al ancho total para abarcar el borde */
+  height: calc(
+    100% + 140px
+  ); /* Agrega 200px al alto total para abarcar el borde */
+  border: 90px solid rgba(255, 255, 255, 0.164); /* Borde transparente al 80% del mismo color */
+  opacity: 0;
+  transform: scale(0); /* Inicialmente, el borde está oculto */
+  border-radius: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-sizing: border-box; /* Incluye el borde en el tamaño del elemento */
+}
+
+.home_main_right_button:hover::before {
+  transform: scale(
+    1
+  ); /* Al hacer hover, el borde se expandirá de adentro hacia afuera */
+  opacity: 1; /* Mostrar completamente el borde */
 }
