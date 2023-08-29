@@ -29,6 +29,7 @@ function App() {
           </a>
         </div>
       </main>
+      <Nav_Bar />
     </div>
   );
 }
