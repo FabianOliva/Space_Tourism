@@ -1,110 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400&family=Bellefair&display=swap");
 
-
-.Nav_Bar_Cont{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 96%;
-    position: absolute;
-    right: 0;
-  }
-  
-  .Nav_Bar_Logo{
-    display: flex;
-    width: 45%;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  }
-  
-  .Nav_Bar_Logo img{
-    width: 48px;
-    height: 48px;
-  }
-  
-  .Nav_Bar_Logo_Line{
-    height: 1px;
-    width: 620px;
-    border-bottom: 1px solid #ffffff;
-    position: absolute;
-    opacity: 25%;
-    right: -5%;
-    z-index: 20;
-    border-radius: 360px;
-  }
-  
-  .Nav_Bar_Index{
-    display: flex;
-    width: 55%;
-    height: 96px;
-    background-color: rgba(255, 255, 255, 0.062);
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(30px);
-    z-index: 10;
+.Nav_Bar_Cont {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 96%;
+  position: absolute;
+  right: 0;
 }
-  
-  .Nav_Bar_Index_ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-around;
-    width: 75%;
-    height: 100%;
-  }
-  
 
-  .Nav_Bar_Index_ul li {
-    position: relative;
-    padding-bottom: 35px;
-    transition: border-color 0.3s ease;
+.Nav_Bar_Logo {
+  display: flex;
+  width: 45%;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.Nav_Bar_Logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.Nav_Bar_Logo_Line {
+  height: 1px;
+  width: 620px;
+  border-bottom: 1px solid #ffffff;
+  position: absolute;
+  opacity: 25%;
+  right: -5%;
+  z-index: 20;
+  border-radius: 360px;
+}
+
+.Nav_Bar_Index {
+  display: flex;
+  width: 55%;
+  height: 96px;
+  background-color: rgba(255, 255, 255, 0.062);
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(30px);
+  z-index: 10;
+}
+
+.Nav_Bar_Index_ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-around;
+  width: 75%;
+  height: 100%;
+}
+
+.Nav_Bar_Index_ul li {
+  position: relative;
+  padding-bottom: 35px;
+  transition: border-color 0.3s ease;
 }
 
 .Nav_Bar_Index_ul li::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) scaleX(0);
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: transform 0.3s ease, width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, width 0.3s ease;
 }
 
 .Nav_Bar_Index_ul li:hover::before {
-    transform: translateX(-50%) scaleX(1);
-    width: 100%;
+  transform: translateX(-50%) scaleX(1);
+  width: 100%;
 }
-  
 
 .Nav_Bar_Index_ul li:hover {
-    border-color: #ffffff;
+  border-color: #ffffff;
 }
-  
-  .Nav_Bar_Index_ul li a{
-    text-decoration: none;
-    color: aliceblue;
-  }
-  
-  .Nav_Bar_Index_El_Number{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .Nav_Bar_Index_El_Name{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 200;
-    padding-left: 12px;
-    font-size: 25px;
-    letter-spacing: 1px;
-    
-  }
-  
+
+.Nav_Bar_Index_ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.Nav_Bar_Index_El_Number {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Nav_Bar_Index_El_Name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  padding-left: 12px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
